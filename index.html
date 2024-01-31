@@ -12,8 +12,8 @@
     <script type="module" src="./src/main.js" defer></script>
 </head>
 <body>
-    <div id="app">     
-        <section id="timer" class="flex">
+    <div id="container">
+        <section id="timer">
             <span id="minutes">25</span>
             <span>:</span>
             <span id="seconds">00</span>
@@ -21,39 +21,31 @@
 
         <section id="controls" class="flex">
             <button data-action="toggleRunning"
-             class="ph ph-play-circle">
+             class="ph-bold ph-play-circle">
                 <span class="sr-only">Iniciar contador</span>
             </button>
             
             <button data-action="toggleRunning"
-             class="ph ph-pause-circle">
+             class="ph-bold ph-stop-circle">
                 <span class="sr-only">Pausar contador</span>
             </button>
             
             <button data-action="set"
-             class="ph ph-timer secondary">
+             class="ph-bold ph-plus-circle">
                 <span class="sr-only">Ajustar contador</span>
             </button>
-            
-            <button data-action="reset"
-             class="ph ph-stop-circle secondary">
-                <span class="sr-only">Reiniciar contador</span>
-            </button>
 
-            <button data-action="toggleMusic"
-             class="ph ph-speaker-none secondary">
-                <span class="sr-only">Iniciar música</span>
-            </button>
-            
-            <button data-action="toggleMusic"
-             class="ph ph-speaker-high">
-                <span class="sr-only">Parar música</span>
+            <button data-action="set"
+             class="ph-bold ph-minus-circle">
+                <span class="sr-only">Ajustar contador</span>
             </button>
         </section>
-
+    </div>
+    
+    <div class="container">
         <section class="flex">
           <img src="./assets/Card 01.svg" data-action="btnFloresta"/>
-          <img src="./assets/Card 02.svg" data-action="btnChuva"/>          
+          <img src="./assets/Card 02.svg" data-action="btnChuva"/>
         </section>
 
         <section class="flex">
@@ -61,6 +53,6 @@
             <img src="./assets/Card 04.svg" data-action="btnLareira"/>
         </section>
       </div>
-    </div>    
+    </div>
   </body>
 </html>
